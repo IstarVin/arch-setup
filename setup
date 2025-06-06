@@ -111,6 +111,7 @@ main() {
     plymouth_install
     rog_setup
     aj_disk
+    cp_configs
 }
 
 
