@@ -105,6 +105,11 @@ cp_configs() {
         done
 }
 
+misc() {
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+    gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal alacritty
+}
+
 main() {
     install_deps
     update_user_dirs
@@ -112,6 +117,7 @@ main() {
     rog_setup
     aj_disk
     cp_configs
+    misc
 }
 
 
